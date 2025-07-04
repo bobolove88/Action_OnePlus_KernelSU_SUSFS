@@ -185,7 +185,7 @@ jobs:
           echo "CONFIG_KSU=y" >> ./common/arch/arm64/configs/gki_defconfig
           
           if [[ "${{ github.event.inputs.kernelsu_variant }}" == "SukiSU-Ultra" ]]; then
-            echo "CONFIG_KPM=y" >> ./common/arch/arm64/configs/gki_defconfig
+          #  echo "CONFIG_KPM=y" >> ./common/arch/arm64/configs/gki_defconfig
           fi
 
           # Add VFS configuration settings
