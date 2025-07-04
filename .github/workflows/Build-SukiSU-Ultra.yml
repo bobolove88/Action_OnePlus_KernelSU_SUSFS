@@ -252,7 +252,7 @@ jobs:
           # SUSFS/KSU 基础配置
           echo "# SUSFS/KSU基础配置"                                  >> "$DEFCONFIG"
           echo "CONFIG_KSU=y"                                        >> "$DEFCONFIG"  # 启用KernelSU
-          echo "CONFIG_KPM=y"                                        >> "$DEFCONFIG"  # 启用Kernel Patch Manager
+          # echo "CONFIG_KPM=y"                                        >> "$DEFCONFIG"  # 启用Kernel Patch Manager
           echo "CONFIG_KSU_SUSFS_SUS_SU=n"                           >> "$DEFCONFIG"  # SUSFS su兼容模式（关闭）
           echo "CONFIG_KSU_MANUAL_HOOK=y"                            >> "$DEFCONFIG"  # 手动挂钩
           echo "CONFIG_KSU_SUSFS=y"                                  >> "$DEFCONFIG"  # 启用SUSFS
